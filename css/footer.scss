@@ -1,0 +1,52 @@
+@import 'mixin';
+footer {
+    height: fit-content!important;
+    margin-bottom: 0!important;
+    a {
+        color: inherit;
+    }
+    div.backdark {
+        max-height: 370px;
+    }
+    h4 {
+        border-bottom: 2px solid white;
+    }
+    iframe {
+        margin: 0!important;
+        width: 100%;
+        height: 370px;
+        border: none!important;
+        padding: 0!important;
+        @include small-device {
+            height: 250px!important;
+        }
+    }
+    p,
+    img {
+        display: block;
+        margin: auto;
+    }
+    div.row.flex-column img {
+        width: 170px;
+    }
+    #donji div.row.flex-column {
+        border-top: 2px solid green;
+        /* height: 150px; */
+        background: rgba(10, 17, 27, 1);
+        width: 100%;
+    }
+    div iframe {
+        padding: 0!important;
+    }
+}
+
+.bg-img2 h5 {
+    color: #dddddd;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+#prava {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

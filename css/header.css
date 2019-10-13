@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+.imgshadow {
+  -webkit-box-shadow: 0 2px 10px 0 rgba(5, 5, 5, 0.6);
+          box-shadow: 0 2px 10px 0 rgba(5, 5, 5, 0.6);
+}
+
+/*navbar*/
+nav ul li {
+  border-radius: 3px;
+  margin: 2px;
+  border-bottom: 5px solid rgba(0, 128, 0, 0);
+}
+
+nav ul li:hover {
+  border-bottom: 5px solid green;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+nav a.nav-link {
+  padding: .3rem .2rem;
+  color: #141414 !important;
+}
+
+nav a span {
+  border-radius: 3px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  nav a span {
+    display: none;
+  }
+}
+
+nav a img {
+  height: 55px;
+}
+
+@media (max-width: 767px) {
+  nav a img {
+    height: 45px;
+  }
+}
+
+.navbar {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.96);
+  padding: 0 !important;
+}
+
+.languages {
+  z-index: 55555555;
+  padding-right: 6px;
+}
+
+div.languages a.button {
+  width: 30px;
+  padding: 0;
+  height: 30px;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+}
+
+div.languages a.button img {
+  width: 25px;
+  height: 25px;
+}
+
+/*hero*/
+#hero {
+  position: relative;
+  margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+  #hero {
+    margin-top: 55px;
+  }
+}
+
+#hero .carousel-item div {
+  height: 65vh;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #hero .carousel-item div {
+    height: 45vh;
+    margin-left: -30%;
+  }
+}
+
+@media (max-width: 767px) {
+  #hero .carousel-item div {
+    margin-left: -30%;
+    height: 35vh;
+  }
+}
+
+#hero div.darken-pseudo {
+  z-index: 2;
+  position: relative;
+}
+
+.darken-pseudo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(20, 20, 20, 0.3);
+  z-index: -1;
+}
+
+div#carouselExampleSlidesOnly * {
+  z-index: 1;
+  position: relative;
+}
+
+#img-holder1 h2,
+#img-holder2 h2,
+#img-holder3 h2 {
+  text-shadow: 2px 2px #070707;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: rgba(20, 20, 20, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 3rem;
+  top: 46%;
+  left: 12%;
+  position: relative;
+  z-index: 33;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  #img-holder1 h2,
+  #img-holder2 h2,
+  #img-holder3 h2 {
+    font-size: 1rem;
+    top: 46%;
+    left: 32%;
+  }
+}
+
+#img-holder1 {
+  position: relative;
+  background-position: center;
+  background: url(../img/srezana.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#img-holder2 {
+  position: relative;
+  background: url(../img/novihero1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#img-holder3 {
+  position: relative;
+  background-position: center;
+  background: url(../img/daf-h-ybrid-main-press-release-iaa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.carousel.carousel-fade .carousel-item.active {
+  opacity: 1 !important;
+}
+
+.carousel.carousel-fade .carousel-item:first-child {
+  top: auto;
+  position: relative;
+  -webkit-transition: opacity ease 1.7s;
+  transition: opacity ease 1.7s;
+}
+
+.carousel.carousel-fade .carousel-item:second-child {
+  top: auto;
+  position: relative;
+  -webkit-transition: opacity ease 1.7s;
+  transition: opacity ease 1.7s;
+}
+
+.carousel.carousel-fade .carousel-item {
+  display: block;
+  opacity: 0;
+  -webkit-transition: opacity ease 1.7s;
+  transition: opacity ease 1.7s;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+/*# sourceMappingURL=header.css.map */

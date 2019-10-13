@@ -1,0 +1,176 @@
+@import 'mixin';
+
+/*navbar*/
+
+nav {
+    ul li {
+        border-radius: 3px;
+        margin: 2px;
+        border-bottom: 5px solid rgba(0, 128, 0, 0.0);
+    }
+    ul li:hover {
+        border-bottom: 5px solid rgba(0, 128, 0, 1);
+        transition: 0.9s;
+    }
+    a.nav-link {
+        padding: .3rem .2rem;
+        color: rgb(20, 20, 20)!important;
+    }
+    a span {
+        border-radius: 3px;
+        font-weight: 700;
+        padding: 10px;
+        @include small-device {
+            display: none;
+        }
+    }
+    a img {
+        height: 55px;
+        @include small-device {
+            height: 45px
+        }
+    }
+}
+
+.navbar {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.96);
+    padding: 0!important;
+}
+
+.languages {
+    z-index: 55555555;
+    padding-right: 6px;
+}
+
+div.languages a.button {
+    width: 30px;
+    padding: 0;
+    height: 30px;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+/*hero*/
+
+#hero {
+    position: relative;
+    margin-top: 60px;
+    @include small-device {
+        margin-top: 55px;
+    }
+    .carousel-item div {
+        height: 65vh;
+        @include medium-device {
+            height: 45vh;
+            margin-left: -30%;
+        }
+        @include small-device {
+            margin-left: -30%;
+            height: 35vh;
+        }
+    }
+    div.darken-pseudo {
+        z-index: 2;
+        position: relative;
+    }
+}
+
+.darken-pseudo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: rgba(20, 20, 20, 0.3);
+    z-index: -1;
+}
+
+div#carouselExampleSlidesOnly * {
+    z-index: 1;
+    position: relative;
+}
+
+#img-holder1 h2,
+#img-holder2 h2,
+#img-holder3 h2 {
+    text-shadow: 2px 2px #070707;
+    width: fit-content;
+    background: rgba(20, 20, 20, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 3rem;
+    top: 46%;
+    left: 12%;
+    position: relative;
+    z-index: 33;
+    color: rgb(255, 255, 255);
+    @include small-device {
+        font-size: 1rem;
+        top: 46%;
+        left: 32%;
+    }
+}
+
+#img-holder1 {
+    position: relative;
+    // height: 60vh;
+    background-position: center;
+    // width: -webkit-fill-available;
+    background: url(../img/srezana.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#img-holder2 {
+    position: relative;
+    // height: 60vh;
+    // width: -webkit-fill-available;
+    background: url(../img/novihero1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#img-holder3 {
+    position: relative;
+    background-position: center;
+    // height: 60vh;
+    // width: -webkit-fill-available;
+    background: url(../img/daf-h-ybrid-main-press-release-iaa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+}
+
+.carousel.carousel-fade .carousel-item:first-child {
+    top: auto;
+    position: relative;
+    transition: opacity ease 1.7s;
+}
+
+.carousel.carousel-fade .carousel-item:second-child {
+    top: auto;
+    position: relative;
+    transition: opacity ease 1.7s;
+}
+
+.carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease 1.7s;
+    left: 0;
+    top: 0;
+    position: absolute;
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+$small-device: 767px;
+@mixin small-device {
+    @media(max-width: #{$small-device}) {
+        @content;
+    }
+}
+
+$medium-device: 768px;
+$large-device: 1024px;
+@mixin medium-device {
+    @media(min-width: #{$medium-device}) and (max-width: #{$large-device}) {
+        @content;
+    }
+}
+
+.myshadow {
+    box-shadow: 0 0 8px 0 rgba(37, 34, 34, 0.2);
+}
+
+.imgshadow {
+    box-shadow: 0 2px 10px 0 rgba(5, 5, 5, 0.6);
+}
+
+.back-light {
+    background-color: rgb(255, 255, 255);
+    color: rgb(35, 33, 33);
+}
+
+.backdark {
+    background-color: rgba(10, 17, 27, 1);
+    color: white!important;
+}
