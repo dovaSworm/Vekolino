@@ -1,19 +1,20 @@
 @import 'mixin';
+#contact div.container {
+    padding: 0 0 70px 0;
+}
+
 footer {
     height: fit-content!important;
     margin-bottom: 0!important;
-    a {
-        color: inherit;
-    }
-    div.backdark {
-        max-height: 370px;
-    }
+    // div.backdark {
+    //     max-height: 370px;
+    // }
     h4 {
         border-bottom: 2px solid white;
     }
     iframe {
         margin: 0!important;
-        width: 100%;
+        width: 90%;
         height: 370px;
         border: none!important;
         padding: 0!important;
@@ -30,6 +31,8 @@ footer {
         width: 170px;
     }
     #donji div.row.flex-column {
+        // margin-top: 50px;
+        padding: 15px 0;
         border-top: 2px solid green;
         /* height: 150px; */
         background: rgba(10, 17, 27, 1);
@@ -41,12 +44,20 @@ footer {
 }
 
 .bg-img2 h5 {
-    color: #dddddd;
-    margin-top: 60px;
-    margin-bottom: 15px;
+    color: #ffffff;
+    margin: auto;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    padding: 20px 50px;
+    // background: rgba(5, 5, 5, .7);
 }
 
 #prava {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.backdark {
+    background-color: rgba(10, 17, 27, .48);
+    color: white!important;
 }

@@ -14,18 +14,20 @@ $(function() {
         // $("h2.zaimg1").css({ "margin-top": "50px!important", "margin-left": "50px!important" });
     } else {
         $('#carouselExampleSlidesOnly').on('slide.bs.carousel', function() {
-            setTimeout(function() {
-                let imgsrc = $(".carousel-item.active img").attr('src');
-                // if (imgsrc === "img/srezana.jpeg") {
-                //     $("h2.zaimg1").css({ "margin-top": "13%", "margin-left": "66%" });
-                // } else if (imgsrc === "img/novihero1.jpg") {
-                //     $("h2.zaimg1").css({ "margin-top": "27%", "margin-left": "62%" });
-                // } else if (imgsrc === "img/daf.jpg") {
-                //     $("h2.zaimg1").css({ "margin-top": "7%", "margin-left": "5%" });
-                // } else {
-                //     $("h2.zaimg1").css({ "margin-top": "7%", "margin-left": "5%" });
-                // }
-            }, 1500);
+            // setTimeout(function() {
+            let imgsrc = $(".carousel-item.active h2").attr("class");
+            console.log(imgsrc);
+            if (imgsrc === "zaimg1") {
+                $("h2.zaimg1").addClass("animaleft");
+                $("h2.zaimg3").removeClass("animaleft");
+            } else if (imgsrc === "zaimg2") {
+                $("h2.zaimg2").addClass("animatop");
+                $("h2.zaimg1").removeClass("animaleft");
+            } else if (imgsrc === "zaimg3") {
+                $("h2.zaimg3").addClass("animaleft");
+                $("h2.zaimg2").removeClass("animaltop");
+            }
+            // }, 1500);
         });
     }
     var date = new Date();

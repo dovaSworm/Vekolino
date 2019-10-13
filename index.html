@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/mixin.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animation.css">
     <title>Vekolino transport</title>
 </head>
 
@@ -64,23 +65,23 @@
 
             <div class="carousel-inner">
 
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-interval="4000">
                     <!-- <h2 class="zaimg2">Vekolino SI transport</h2> -->
                     <div class=" darken-pseudo" id="img-holder1">
-                        <h2 class="zaimg1">Vekolino SI transport</h2>
+                        <h2 class="zaimg1 animaleft">Vekolino SI transport</h2>
                     </div>
                     <!-- <img src="img/srezana.jpeg" class="d-block w-100" alt="Truck 1"> -->
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="4000">
                     <div class=" darken-pseudo" id="img-holder2">
-                        <h2 class="zaimg2">Vekolino SI transport</h2>
+                        <h2 class="zaimg2 animatop">Reliabile</h2>
                     </div>
                     <!-- <h2 class="zaimg2">Vekolino SI transport</h2> -->
                     <!-- <img src="img/novihero1.jpg" class="d-block w-100" alt="Truck 2"> -->
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="4000">
                     <div class=" darken-pseudo" id="img-holder3">
-                        <h2 class="zaimg3">Vekolino SI transport</h2>
+                        <h2 class="zaimg3 animaleft">Safe and Fast</h2>
                     </div>
                     <!-- <h2 class="zaimg3">Vekolino SI transport</h2> -->
                     <!-- <img src="img/daf.jpg" class="d-block w-100" alt="Truck 3"> -->
@@ -145,11 +146,11 @@
                         <div class="emp-card text-center">
                             <img src="./img/avatar.png" alt="avatar">
                             <h5>Owner</h5>
-                            <h4>Sininiša Trivanović</h4>
-                            <h6>Mail&nbsp;<i class="far fa-envelope"></i></h6>
+                            <p>Sininiša Trivanović</p>
+                            <p>Mail&nbsp;<i class="far fa-envelope"></i></p>
                             <a href="mailto:vekolino.si@gmail.com">vekolino.si@gmail.com</a>
-                            <h6>Phone&nbsp;<i class="fa fa-phone" aria-hidden="true"></i></h6>
-                            <a href="tel:063/810-1242">063/810-1242</a>
+                            <p>Phone&nbsp;<i class="fa fa-phone" aria-hidden="true"></i></p>
+                            <a href="tel:+38163/584259">+38163/584259</a>
                         </div>
                     </div>
 
@@ -158,33 +159,33 @@
                         <div class="emp-card text-center">
                             <img src="./img/dispatcher.svg" alt="avatar">
                             <h5>Dispatcher</h5>
-                            <h4>Dušan Aničić&nbsp</h4>
-                            <h6>Mail&nbsp;<i class="far fa-envelope"></i></h6>
+                            <p>Dušan Aničić</p>
+                            <p>Mail&nbsp;<i class="far fa-envelope"></i></p>
                             <a href="mailto:vekolino.si@gmail.com">vekolino.si@gmail.com</a>
-                            <h6>Phone&nbsp;<i class="fa fa-phone" aria-hidden="true"></i></h6>
-                            <a href="tel:063/810-1242">063/810-1242</a>
+                            <p>Phone&nbsp;<i class="fa fa-phone" aria-hidden="true"></i></p>
+                            <a href="tel:+38163/584259">+38163/584259</a>
                         </div>
                     </div>
                     <div class="col col-12 col-md-6 col-lg-3 p-1">
                         <div class="emp-card text-center">
                             <img src="./img/dispatcher.svg" alt="avatar">
                             <h5>Dispatcher</h5>
-                            <h4>Nemanja Cvetković</h4>
-                            <h6>Mail&nbsp;<i class="far fa-envelope"></i></h6>
+                            <p>Nemanja Cvetković</p>
+                            <p>Mail&nbsp;<i class="far fa-envelope"></i></p>
                             <a class="textblack" href="mailto:vekolino.si@gmail.com">vekolino.si@gmail.com</a>
-                            <h6>Phone&nbsp;<i class="fa fa-phone" aria-hidden="true"></i></h6>
-                            <a class="textblack" href="tel:063/810-1242">063/810-1242</a>
+                            <p>Phone&nbsp;<i class="fa fa-phone" aria-hidden="true"></i></p>
+                            <a class="textblack" href="tel:+38163/584259">+38163/584259</a>
                         </div>
                     </div>
                     <div class="col col-12 col-md-6 col-lg-3 p-1">
                         <div class="emp-card text-center">
                             <img src="./img/dispatcher.svg" alt="avatar">
                             <h5>Dispatcher</h5>
-                            <h4>Nikola Radjenović</h4>
-                            <h6>Mail&nbsp;<i class="far fa-envelope"></i></h6>
+                            <p>Nikola Radjenović</p>
+                            <p>Mail&nbsp;<i class="far fa-envelope"></i></p>
                             <a class="textblack" href="mailto:vekolino.si@gmail.com">vekolino.si@gmail.com</a>
-                            <h6>Phone&nbsp;<i class="fa fa-phone" aria-hidden="true"></i></h6>
-                            <a class="textblack" href="tel:063/810-1242">063/810-1242</a>
+                            <p>Phone&nbsp;<i class="fa fa-phone" aria-hidden="true"></i></p>
+                            <a class="textblack" href="tel:+38163/584259">+38163/584259</a>
                         </div>
                     </div>
                 </div>
@@ -197,13 +198,13 @@
     <!-- footer -->
     <footer>
         <a id="contacthref"></a>
-        <div id="contact-wraper" class="bg-img2  imgshadow">
-            <div class="container">
-                <div class="row no-gutters">
-                    <h5>How to reach us</h5>
+        <section id="contact" class="bg-img2 imgshadow">
+            <div class="container backdark">
+                <div class="w-100">
+                    <h5 class="text-center">How to reach us?</h5>
                 </div>
-                <div class="row  no-gutters ">
-                    <div class="col col-12 col-md-3 col-lg-3 backdark">
+                <div class="row no-gutters">
+                    <div class="col col-12 col-md-3 col-lg-3">
                         <div class="col col-12 p-4 text-center">
                             <h4>Address&nbsp;<i class="far fa-address-card"></i></h4>
                             <address>Mala Slevica 58b<br />1315 Velike Lasce, Slovenia</address>
@@ -220,11 +221,11 @@
                     <!--  -->
                     <div class="col col-12 col-md-9 col-lg-9">
                         <iframe src="https://maps.google.com/maps?q=Mala%20Slevica%2058b&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" allowfullscreen="">
-        </iframe>
+                        </iframe>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <div id="donji" class="w-100">
 
             <div class="row flex-column no-gutters">

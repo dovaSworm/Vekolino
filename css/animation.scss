@@ -1,0 +1,29 @@
+@keyframes animaleft {
+    0% {
+        transform: rotate(0) translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+*.animaleft {
+    animation: animaleft 1.5s forwards 0s ease;
+}
+
+@keyframes animatop {
+    0% {
+        transform: rotate(0) translateY(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+*.animatop {
+    animation: animatop 1.5s forwards 0s ease;
+}

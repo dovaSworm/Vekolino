@@ -1,7 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+.myshadow {
+  -webkit-box-shadow: 0 0 8px 0 rgba(37, 34, 34, 0.2);
+          box-shadow: 0 0 8px 0 rgba(37, 34, 34, 0.2);
+}
+
 .imgshadow {
   -webkit-box-shadow: 0 2px 10px 0 rgba(5, 5, 5, 0.6);
           box-shadow: 0 2px 10px 0 rgba(5, 5, 5, 0.6);
+}
+
+.back-light {
+  background-color: white;
+  color: #232121;
+}
+
+.backdark {
+  background-color: #0a111b;
+  color: white !important;
 }
 
 /*navbar*/
@@ -104,6 +119,10 @@ div.languages a.button img {
   position: relative;
 }
 
+#hero h2 {
+  opacity: 0;
+}
+
 .darken-pseudo::after {
   content: '';
   position: absolute;
@@ -128,8 +147,8 @@ div#carouselExampleSlidesOnly * {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background: rgba(20, 20, 20, 0.3);
-  border-radius: 8px;
+  background: rgba(10, 17, 27, 0.48);
+  border-radius: 3px;
   padding: 20px;
   font-size: 3rem;
   top: 46%;
@@ -171,33 +190,5 @@ div#carouselExampleSlidesOnly * {
   background: url(../img/daf-h-ybrid-main-press-release-iaa.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.carousel.carousel-fade .carousel-item.active {
-  opacity: 1 !important;
-}
-
-.carousel.carousel-fade .carousel-item:first-child {
-  top: auto;
-  position: relative;
-  -webkit-transition: opacity ease 1.7s;
-  transition: opacity ease 1.7s;
-}
-
-.carousel.carousel-fade .carousel-item:second-child {
-  top: auto;
-  position: relative;
-  -webkit-transition: opacity ease 1.7s;
-  transition: opacity ease 1.7s;
-}
-
-.carousel.carousel-fade .carousel-item {
-  display: block;
-  opacity: 0;
-  -webkit-transition: opacity ease 1.7s;
-  transition: opacity ease 1.7s;
-  left: 0;
-  top: 0;
-  position: absolute;
 }
 /*# sourceMappingURL=header.css.map */

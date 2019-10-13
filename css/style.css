@@ -19,20 +19,27 @@
   color: white !important;
 }
 
+#main #services h3,
+#main #about h3 {
+  border-bottom: 5px solid green;
+}
+
 #main h3 {
   margin-bottom: 20px;
 }
 
 #about,
 #services,
-#team {
-  padding: 75px 0;
+#team,
+#contact {
+  padding: 125px 0;
 }
 
 @media (max-width: 767px) {
   #about,
   #services,
-  #team {
+  #team,
+  #contact {
     padding: 40px 20px;
   }
 }
@@ -69,7 +76,8 @@ main .row {
   background-attachment: fixed;
 }
 
-div.bg-img1::after {
+div.bg-img1::after,
+section.bg-img2::after {
   content: "";
   display: block;
   width: 100%;
@@ -83,32 +91,18 @@ div.bg-img1::after {
   z-index: 1;
 }
 
-div.bg-img2::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: rgba(8, 8, 8, 0.6);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
 div.darken-pseudo > * {
   z-index: 5;
 }
 
 div.bg-img1 > *,
-div.bg-img2 > * {
+section.bg-img2 > * {
   position: relative;
   z-index: 2;
 }
 
 div.bg-img1,
-div.bg-img2 {
+section.bg-img2 {
   position: relative;
 }
 
@@ -118,19 +112,13 @@ div.bg-img2 {
   list-style-type: none;
 }
 
+#about .row,
+#team .row {
+  -webkit-box-shadow: 0 10px 10px -5px rgba(5, 5, 5, 0.6);
+          box-shadow: 0 10px 10px -5px rgba(5, 5, 5, 0.6);
+}
+
 /*team*/
-#team h3 {
-  width: 50%;
-}
-
-@media (max-width: 767px) {
-  #team h3 {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
-
 .emp-card {
   border: 1px solid silver;
   color: #0a111b;
@@ -141,13 +129,19 @@ div.bg-img2 {
   width: 80%;
 }
 
-.emp-card h2 {
-  margin-top: 15px;
-  margin-bottom: 25px;
+@media (max-width: 767px) {
+  .emp-card img {
+    width: 40%;
+  }
 }
 
-.emp-card h6 {
-  margin-bottom: 10px;
-  margin-top: 15px;
+.emp-card p {
+  font-size: 1.2rem;
+}
+
+.emp-card p,
+.emp-card h5 {
+  padding: 5px 0;
+  margin-bottom: 0 !important;
 }
 /*# sourceMappingURL=style.css.map */

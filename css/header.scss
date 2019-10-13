@@ -80,6 +80,9 @@ div.languages a.button {
         z-index: 2;
         position: relative;
     }
+    h2 {
+        opacity: 0;
+    }
 }
 
 .darken-pseudo::after {
@@ -104,8 +107,8 @@ div#carouselExampleSlidesOnly * {
 #img-holder3 h2 {
     text-shadow: 2px 2px #070707;
     width: fit-content;
-    background: rgba(20, 20, 20, 0.3);
-    border-radius: 8px;
+    background: rgba(10, 17, 27, .48);
+    border-radius: 3px;
     padding: 20px;
     font-size: 3rem;
     top: 46%;
@@ -150,27 +153,24 @@ div#carouselExampleSlidesOnly * {
     background-repeat: no-repeat;
 }
 
-.carousel.carousel-fade .carousel-item.active {
-    opacity: 1 !important;
-}
-
-.carousel.carousel-fade .carousel-item:first-child {
-    top: auto;
-    position: relative;
-    transition: opacity ease 1.7s;
-}
-
-.carousel.carousel-fade .carousel-item:second-child {
-    top: auto;
-    position: relative;
-    transition: opacity ease 1.7s;
-}
-
-.carousel.carousel-fade .carousel-item {
-    display: block;
-    opacity: 0;
-    transition: opacity ease 1.7s;
-    left: 0;
-    top: 0;
-    position: absolute;
-}
+// .carousel.carousel-fade .carousel-item.active {
+//     opacity: 1 !important;
+// }
+// .carousel.carousel-fade .carousel-item:first-child {
+//     top: auto;
+//     position: relative;
+//     transition: opacity ease 1.7s;
+// }
+// .carousel.carousel-fade .carousel-item:second-child {
+//     top: auto;
+//     position: relative;
+//     transition: opacity ease 1.7s;
+// }
+// .carousel.carousel-fade .carousel-item {
+//     display: block;
+//     opacity: 0;
+//     transition: opacity ease 1.7s;
+//     left: 0;
+//     top: 0;
+//     position: absolute;
+// }
