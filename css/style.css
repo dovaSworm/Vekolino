@@ -21,7 +21,8 @@
 
 #main #services h3,
 #main #about h3 {
-  border-bottom: 5px solid green;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #43454e;
 }
 
 #main h3 {
@@ -42,6 +43,13 @@
   #contact {
     padding: 40px 20px;
   }
+}
+
+#about div.col,
+#services div.col,
+#team div.col,
+#contact div.container {
+  opacity: 0;
 }
 
 /* #main {
@@ -107,9 +115,16 @@ section.bg-img2 {
 }
 
 /*about*/
+#about p {
+  padding-bottom: 20px;
+  border-bottom: 3px solid #43454e;
+}
+
 /*services*/
 #services ul {
   list-style-type: none;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #43454e;
 }
 
 #about .row,

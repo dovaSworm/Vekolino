@@ -507,14 +507,6 @@ footer ul {
 }
 
 @media (max-width: 767px) {
-    body {
-        padding: 0!important;
-        font-size: 13px;
-    }
-    .navbar-toggler {
-        margin-top: 4px;
-        margin-left: auto;
-    }
     nav a img {
         height: 24px;
         width: 40px;
@@ -564,9 +556,6 @@ footer ul {
     }
     #team {
         padding: 1px;
-    }
-    iframe {
-        height: 250px!important;
     }
     #team h3 {
         width: 100%;

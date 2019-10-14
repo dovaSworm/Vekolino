@@ -27,3 +27,33 @@
 *.animatop {
     animation: animatop 1.5s forwards 0s ease;
 }
+
+@keyframes animaright {
+    0% {
+        transform: rotate(0) translateX(150px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+*.animaright {
+    animation: animaright 1.5s forwards 0s ease;
+}
+
+@keyframes animaimg {
+    0% {
+        transform: rotate(0) scale(.3);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+*.animaimg {
+    animation: animaimg 1.5s forwards 0s ease;
+}

@@ -23,11 +23,11 @@
 nav ul li {
   border-radius: 3px;
   margin: 2px;
-  border-bottom: 5px solid rgba(0, 128, 0, 0);
+  border-bottom: 5px solid rgba(67, 69, 78, 0);
 }
 
 nav ul li:hover {
-  border-bottom: 5px solid green;
+  border-bottom: 5px solid #43454e;
   -webkit-transition: 0.9s;
   transition: 0.9s;
 }

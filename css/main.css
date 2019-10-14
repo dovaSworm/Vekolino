@@ -37,7 +37,7 @@ body {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: linear-gradient(45deg, #747575, transparent), repeating-linear-gradient(75deg, transparent 0px, transparent 96px, rgba(198, 198, 198, 0.5) 96px, rgba(198, 198, 198, 0.5) 192px), repeating-linear-gradient(-135deg, transparent 0px, transparent 96px, rgba(198, 198, 198, 0.5) 96px, rgba(198, 198, 198, 0.5) 192px);
+  background: linear-gradient(45deg, #bbbbbb, transparent), repeating-linear-gradient(75deg, transparent 0px, transparent 96px, rgba(231, 231, 231, 0.5) 96px, rgba(231, 231, 231, 0.5) 192px), repeating-linear-gradient(-135deg, transparent 0px, transparent 96px, rgba(231, 231, 231, 0.5) 96px, rgba(231, 231, 231, 0.5) 192px);
 }
 
 @media (max-width: 767px) {
