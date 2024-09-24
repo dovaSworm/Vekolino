@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+$zutiback:rgb(248 158 20 / 85%);
+$crvena: #ff0047;
+$svetlosiva: rgba(197, 198, 200, 1);
+$siva: rgba(32, 40, 51, 1);
+
 $small-device: 767px;
 @mixin small-device {
     @media(max-width: #{$small-device}) {
@@ -7,19 +11,28 @@ $small-device: 767px;
 }
 
 $medium-device: 768px;
-$large-device: 1024px;
+$large-device: 1023px;
 @mixin medium-device {
     @media(min-width: #{$medium-device}) and (max-width: #{$large-device}) {
         @content;
     }
 }
-
+@mixin large-device {
+    @media(min-width: #{$large-device}) {
+        @content;
+    }
+}
+$box-shadow-main: rgb(9 5 43 / 61%) 0px 2px 4px, rgb(9 5 43 / 66%) 0px 7px 12px -3px, rgb(9 5 43 / 59%) 0px -3px 0px inset;
+$box-shadow-active: rgb(9 5 43 / 61%) 0px 0px 2px, rgb(9 5 43 / 14%) 0px 3px 9px -3px, rgb(9 5 43 / 43%) 0px -2px 0px inset;
+.text-bold {
+  font-weight: bold;
+}
 .myshadow {
     box-shadow: 0 0 8px 0 rgba(37, 34, 34, 0.2);
 }
 
 .imgshadow {
-    box-shadow: 0 2px 10px 0 rgba(5, 5, 5, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .back-light {
@@ -31,3 +44,85 @@ $large-device: 1024px;
     background-color: rgba(10, 17, 27, 1);
     color: white!important;
 }
+
+
+@font-face {
+    font-family: "Neutrons";
+    src: url(../fonts/NeutronsDemoRegular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Orbitron";
+    src: url(../fonts/Orbitron-ExtraBold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Play";
+    src: url(../fonts/Play-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Playb";
+    src: url(../fonts/Play-Bold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Alegrya";
+    src: url(../fonts/AlegreyaSansSC-Thin.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Coda";
+    src: url(../fonts/CodaCaption-ExtraBold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Archivo";
+    src: url(../fonts/ArchivoBlack-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Cormoran";
+    src: url(../fonts/CormorantGaramond-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "DotGot";
+    src: url(../fonts/DotGothic16-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Electro";
+    src: url(../fonts/Electrolize-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Fredo";
+    src: url(../fonts/FredokaOne-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Goldman";
+    src: url(../fonts/Goldman-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Grupo";
+    src: url(../fonts/Gruppo-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Julius";
+    src: url(../fonts/JuliusSansOne-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Marvel";
+    src: url(../fonts/Marvel-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Quastrial";
+    src: url(../fonts/Questrial-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "SixCaps";
+    src: url(../fonts/SixCaps-Regular.ttf) format("truetype");
+  }

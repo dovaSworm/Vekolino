@@ -1,21 +1,102 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+.text-bold {
+  font-weight: bold;
+}
+
 .myshadow {
-  -webkit-box-shadow: 0 0 8px 0 rgba(37, 34, 34, 0.2);
-          box-shadow: 0 0 8px 0 rgba(37, 34, 34, 0.2);
+  box-shadow: 0 0 8px 0 rgba(37, 34, 34, 0.2);
 }
 
 .imgshadow {
-  -webkit-box-shadow: 0 2px 10px 0 rgba(5, 5, 5, 0.6);
-          box-shadow: 0 2px 10px 0 rgba(5, 5, 5, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .back-light {
-  background-color: white;
-  color: #232121;
+  background-color: rgb(255, 255, 255);
+  color: rgb(35, 33, 33);
 }
 
 .backdark {
-  background-color: #0a111b;
+  background-color: rgb(10, 17, 27);
   color: white !important;
 }
-/*# sourceMappingURL=mixin.css.map */
+
+@font-face {
+  font-family: "Neutrons";
+  src: url(../fonts/NeutronsDemoRegular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url(../fonts/Orbitron-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Play";
+  src: url(../fonts/Play-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Playb";
+  src: url(../fonts/Play-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Alegrya";
+  src: url(../fonts/AlegreyaSansSC-Thin.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Coda";
+  src: url(../fonts/CodaCaption-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Archivo";
+  src: url(../fonts/ArchivoBlack-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Cormoran";
+  src: url(../fonts/CormorantGaramond-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "DotGot";
+  src: url(../fonts/DotGothic16-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Electro";
+  src: url(../fonts/Electrolize-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Fredo";
+  src: url(../fonts/FredokaOne-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Goldman";
+  src: url(../fonts/Goldman-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Grupo";
+  src: url(../fonts/Gruppo-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Julius";
+  src: url(../fonts/JuliusSansOne-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Marvel";
+  src: url(../fonts/Marvel-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/OpenSans-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Quastrial";
+  src: url(../fonts/Questrial-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SixCaps";
+  src: url(../fonts/SixCaps-Regular.ttf) format("truetype");
+}/*# sourceMappingURL=mixin.css.map */

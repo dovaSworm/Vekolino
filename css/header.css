@@ -1,21 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 .myshadow {
-  -webkit-box-shadow: 0 0 8px 0 rgba(37, 34, 34, 0.2);
-          box-shadow: 0 0 8px 0 rgba(37, 34, 34, 0.2);
+  box-shadow: 0 0 8px 0 rgba(37, 34, 34, 0.2);
 }
 
 .imgshadow {
-  -webkit-box-shadow: 0 2px 10px 0 rgba(5, 5, 5, 0.6);
-          box-shadow: 0 2px 10px 0 rgba(5, 5, 5, 0.6);
+  box-shadow: 0 2px 10px 0 rgba(5, 5, 5, 0.6);
 }
 
 .back-light {
-  background-color: white;
-  color: #232121;
+  background-color: rgb(255, 255, 255);
+  color: rgb(35, 33, 33);
 }
 
 .backdark {
-  background-color: #0a111b;
+  background-color: rgb(10, 17, 27);
   color: white !important;
 }
 
@@ -25,34 +23,27 @@ nav ul li {
   margin: 2px;
   border-bottom: 5px solid rgba(67, 69, 78, 0);
 }
-
 nav ul li:hover {
-  border-bottom: 5px solid #43454e;
-  -webkit-transition: 0.9s;
+  border-bottom: 5px solid rgb(67, 69, 78);
   transition: 0.9s;
 }
-
 nav a.nav-link {
-  padding: .3rem .2rem;
-  color: #141414 !important;
+  padding: 0.3rem 0.2rem;
+  color: rgb(20, 20, 20) !important;
 }
-
 nav a span {
   border-radius: 3px;
   font-weight: 700;
   padding: 10px;
 }
-
 @media (max-width: 767px) {
   nav a span {
     display: none;
   }
 }
-
 nav a img {
   height: 55px;
 }
-
 @media (max-width: 767px) {
   nav a img {
     height: 45px;
@@ -78,7 +69,6 @@ div.languages a.button {
   background: transparent;
   border-radius: 50%;
 }
-
 div.languages a.button img {
   width: 25px;
   height: 25px;
@@ -89,42 +79,36 @@ div.languages a.button img {
   position: relative;
   margin-top: 60px;
 }
-
 @media (max-width: 767px) {
   #hero {
     margin-top: 55px;
   }
 }
-
 #hero .carousel-item div {
   height: 65vh;
 }
-
 @media (min-width: 768px) and (max-width: 1024px) {
   #hero .carousel-item div {
     height: 45vh;
     margin-left: -30%;
   }
 }
-
 @media (max-width: 767px) {
   #hero .carousel-item div {
     margin-left: -30%;
     height: 35vh;
   }
 }
-
 #hero div.darken-pseudo {
   z-index: 2;
   position: relative;
 }
-
 #hero h2 {
   opacity: 0;
 }
 
 .darken-pseudo::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -155,13 +139,12 @@ div#carouselExampleSlidesOnly * {
   left: 12%;
   position: relative;
   z-index: 33;
-  color: white;
+  color: rgb(255, 255, 255);
 }
-
 @media (max-width: 767px) {
   #img-holder1 h2,
-  #img-holder2 h2,
-  #img-holder3 h2 {
+#img-holder2 h2,
+#img-holder3 h2 {
     font-size: 1rem;
     top: 46%;
     left: 32%;
@@ -190,5 +173,4 @@ div#carouselExampleSlidesOnly * {
   background: url(../img/daf-h-ybrid-main-press-release-iaa.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-}
-/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */

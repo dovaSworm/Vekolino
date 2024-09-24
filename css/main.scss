@@ -1,4 +1,4 @@
-@import 'mixin';
+@import "mixin";
 * {
     padding: 0;
     margin: 0;
@@ -11,15 +11,13 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     font-weight: 500;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: linear-gradient(45deg, rgb(187, 187, 187), transparent), repeating-linear-gradient(75deg, transparent 0px, transparent 96px, rgba(231, 231, 231, 0.5) 96px, rgba(231, 231, 231, .5) 192px), repeating-linear-gradient(-135deg, transparent 0px, transparent 96px, rgba(231, 231, 231, .5) 96px, rgba(231, 231, 231, .5) 192px);
-    // background: linear-gradient(45deg, rgba(204, 204, 204, 0.3), transparent), repeating-linear-gradient(75deg, transparent 0px, transparent 96px, rgba(219, 219, 219, 0.5) 96px, rgba(219, 219, 219, .5) 192px), repeating-linear-gradient(-135deg, transparent 0px, transparent 96px, rgba(219, 219, 219, .5) 96px, rgba(219, 219, 219, .5) 192px, transparent 192px, transparent 220px, rgba(219, 219, 219, .5) 220px, rgba(219, 219, 219, .5) 312px);
     @include small-device {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
@@ -30,9 +28,479 @@ h2 {
 }
 
 a {
-    color: inherit;
+    color: inherit !important;
 }
 
 address {
-    margin-bottom: 0!important;
+    margin-bottom: 0 !important;
+}
+
+/*navbar*/
+
+nav {
+    ul li {
+        border-radius: 3px;
+        margin: 2px;
+        font-weight: bold;
+        color: black !important;
+        border-bottom: 5px solid rgba(67, 69, 78, 0);
+    }
+    ul li:hover {
+        color: rgba(0, 0, 0, 0.541) !important;
+        border-bottom: 5px solid rgba(67, 69, 78, 1);
+    }
+    a.nav-link {
+        padding: 0.3rem 0.2rem;
+    }
+    a span {
+        font-weight: 700;
+        padding: 10px;
+        font-family: "Play";
+        // @include small-device {
+        //     display: none;
+        // }
+    }
+    a img {
+        height: 55px;
+        @include small-device {
+            height: 45px;
+        }
+    }
+    button {
+        @media (min-width: 993px) {
+            display: none !important;
+        }
+        span {
+            height: 2px;
+            width: 20px;
+            margin: 5px 0;
+            background-color: black;
+            display: block;
+        }
+    }
+}
+
+.navbar {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.96);
+    padding: 0 !important;
+}
+.my-toggler {
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 6px 11px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    text-align: center;
+    text-decoration: none #d1d5db solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.my-toggler:hover {
+    background-color: rgb(249, 250, 251);
+}
+
+.my-toggler:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.my-toggler:focus-visible {
+    box-shadow: none;
+}
+/*hero*/
+
+#hero {
+    position: relative;
+    margin-top: 55px;
+    height: 50vh;
+    font-family: "Playb";
+    @include small-device {
+        margin-top: 55px;
+    }
+}
+.hero-holder {
+    background-image: url(../img/tr1.jpg);
+    background-color: rgba(255, 255, 255, 0.62);
+    background-size: cover !important;
+    background-position: center;
+    display: flex;
+    // flex-direction: column;
+    width: 100%;
+    // align-items: end;
+    // justify-content: center;
+    @include small-device {
+        flex-direction: column;
+    }
+    .heading {
+        width: 50%;
+        height: 100%;
+        @include small-device {
+            width: 48%;
+            height: 100%;
+            flex-direction: column;
+        }
+        @include medium-device {
+        }
+    }
+    .subheading {
+        width: 60%;
+        height: 80%;
+        margin-top: auto;
+        @include small-device {
+            width: 100%;
+            height: 80%;
+            margin-top: auto;
+        }
+    }
+    p {
+        background: rgba(125, 26, 26, 0.82);
+        height: 100%;
+        width: 80%;
+        // left: 0;
+        margin-left: auto;
+        align-items: end;
+        margin-bottom: 0;
+        font-size: 4.4rem;
+        padding-right: 10px;
+        justify-content: end;
+        padding-bottom: 84px;
+        color: #fffefe;
+        display: flex;
+        @include small-device {
+            font-size: 1.4rem;
+            padding-bottom: 14px;
+        }
+        @include medium-device {
+            font-size: 2.77rem;
+            padding-bottom: 175px;
+        }
+    }
+    h1 {
+        padding-bottom: 100px;
+        background: rgba(0, 0, 0, 0.8196078431);
+        color: #fffefe;
+        display: flex;
+        margin-bottom: 0;
+        margin-top: auto;
+        right: 0;
+        padding-left: 10px;
+        font-size: 3.2rem;
+        align-items: end;
+        width: 87%;
+        justify-content: end;
+        height: 100%;
+        @include small-device {
+            font-size: 1.2rem;
+            padding-left: 45px;
+        }
+        @include medium-device {
+            font-size: 2.44rem;
+            padding-bottom: 110px;
+        }
+    }
+}
+.mytitle {
+    z-index: 1;
+    margin-top: auto;
+    padding: 20px 7%;
+    width: 100%;
+    margin-right: auto;
+    top: 10%;
+    width: fit-content;
+    background: #a22a2a;
+    margin-bottom: auto;
+    color: #fffefe;
+    text-transform: uppercase;
+}
+.myparagraph {
+    padding: 40px;
+    text-align: justify;
+    margin-bottom: 0;
+    @include small-device {
+        padding: 10px;
+    }
+    @include medium-device {
+    }
+    @include large-device {
+        width: 57%;
+    }
+}
+#about {
+    margin-top: 100px;
+    @include small-device {
+        margin-top: 60px;
+    }
+    .about-text {
+        @include large-device {
+            width: 200%;
+        }
+        background: rgb(67, 69, 78);
+        margin-right: -70px;
+        color: white;
+        @include small-device {
+            width: 100%;
+            margin: 0;
+            background-image: url(../img/tr16.jpg);
+            background-size: cover !important;
+            background-position: center;
+        }
+    }
+    .myparagraph {
+        background: rgba(67, 69, 78, 0.79);
+    }
+    .about-img-holder {
+        img {
+            width: 400px;
+            max-width: -webkit-fill-available;
+            object-fit: cover;
+            height: 700px;
+            margin-top: -225px;
+            margin-left: 90px;
+            @include small-device {
+                display: none;
+            }
+            @include medium-device {
+                margin-top: 0;
+                margin-left: 70px;
+                height: 512px;
+                width: 278px;
+            }
+            // height: 800px;
+        }
+    }
+    .about-h3-holder {
+        background-image: url(../img/tr9.jpg);
+        background-color: rgba(255, 255, 255, 0.62);
+        background-size: cover !important;
+        background-position: left top;
+        display: flex;
+        height: 40vh;
+        margin-left: auto;
+        @include medium-device {
+            height: 25vh;
+        }
+        // background-attachment: fixed;
+    }
+}
+
+#service {
+    margin-top: 100px;
+    @include small-device {
+        margin-top: 60px;
+    }
+    .services-text2 {
+        @include large-device {
+            width: 200%;
+        }
+        background: rgb(13 24 30); //rgb(46 52 62);
+        margin-right: -70px;
+        color: white;
+        @include small-device {
+            width: 100%;
+            margin: 0;
+            // background: red;
+            background-image: url(../img/tr19.jpg);
+            background-size: cover !important;
+            background-position: center;
+        }
+    }
+    .myparagraph {
+        background: rgba(13, 24, 30, 0.788);
+    }
+    ul {
+        list-style-type: none;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        i {
+            margin-right: 10px;
+        }
+        // border-bottom: 3px solid #43454e;
+    }
+    .services-img-holder {
+        img {
+            width: 400px;
+            max-width: -webkit-fill-available;
+            object-fit: cover;
+            height: 620px;
+            margin-top: -225px;
+            margin-left: 90px;
+            @include small-device {
+                display: none;
+            }
+            @include medium-device {
+                margin-top: 0;
+                margin-left: 70px;
+                height: 401px;
+                width: 278px;
+            }
+            // height: 800px;
+        }
+    }
+    .services-h3-holder {
+        background-image: url(../img/tr18.jpg);
+        background-color: rgba(255, 255, 255, 0.62);
+        background-size: cover !important;
+        background-position: left top;
+        display: flex;
+        height: 40vh;
+        // margin-left: auto;
+        @include medium-device {
+            height: 25vh;
+        }
+        // background-attachment: fixed;
+    }
+}
+#contact {
+    margin-top: 100px;
+    @include small-device {
+        margin-top: 60px;
+    }
+    .contact-h3-holder {
+        background-image: url(../img/tr23.jpg);
+        background-color: rgba(255, 255, 255, 0.62);
+        background-size: cover !important;
+        background-position: left top;
+        display: flex;
+        height: 40vh;
+        @include medium-device {
+            height: 25vh;
+        }
+    }
+    img.avatar {
+        margin-top: 3px;
+        width: 70px;
+        @include small-device {
+            // width: 40%;
+        }
+    }
+    .team {
+        background: rgb(79 92 112 / 91%);//rgb(44 61 87); //rgb(142 163 176);rgb(97 124 143);rgb(71 80 94)rgb(79 92 112)
+        color: white;
+        padding: 50px 0 35px 0;
+        @include large-device {
+            width: 200%;
+        }
+        @include medium-device {
+            padding: 40px;
+        }
+        @include small-device {
+            // background-blend-mode: color;
+            padding: 0;
+            width: 100%;
+            // background: #000000d6;
+            margin: 0;
+            background-image: url(../img/dis3.jpg);
+            background-size: cover !important;
+            background-position: center;
+        }
+    }
+    .team-text {
+        @include small-device {
+            padding-left: 20px;
+            background: rgb(79 92 112 / 91%);
+        }
+        @include large-device {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+        }
+        p {
+            display: flex;
+            margin-bottom: 0 !important;
+            @include large-device {
+                // font-size: 1.2rem;
+            }
+        }
+        i {
+            margin-right: 10px;
+            align-items: center;
+            display: flex;
+        }
+        a {
+            display: flex;
+            text-decoration: none !important;
+        }
+    }
+    .team-card {
+        padding-bottom: 20px;
+        @include small-device {
+            // padding-left: 20px;
+            padding-bottom: 10px;
+        }
+        @include medium-device {
+            // padding-left: 20px;
+            padding-bottom: 10px;
+        }
+        // border-bottom: 1px dashed white;
+    }
+    .contact-img-holder {
+        img {
+            width: 600px;
+            max-width: -webkit-fill-available;
+            object-fit: cover;
+            height: 420px;
+            margin-top: -225px;
+            @include small-device {
+                display: none;
+            }
+            @include medium-device {
+                margin-top: 0;
+                width: 348px;
+                height: 548px;
+            }
+        }
+    }
+}
+.team-img-holder {
+    background-image: url(../img/dis1.jpeg);
+    background-color: rgba(255, 255, 255, 0.62);
+    background-size: cover !important;
+    background-position: center;
+}
+
+
+footer {
+    margin-bottom: 0 !important;
+    .map-holder {
+        width: 100%;
+        height: 370px;
+        @include small-device {
+            height: 250px !important;
+        }
+    }
+    iframe {
+        margin: 0 !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+    #donji {
+        padding: 10px 0;
+        background: rgba(10, 17, 27, 1);
+        width: 100%;
+        img {
+            height: 40px;
+            width: auto;
+            margin: auto;
+            @include small-device {
+                height: 30px !important;
+            }
+        }
+        p {
+            margin: auto;
+            width: fit-content;
+            color: white;
+            font-size: 13px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
 }
